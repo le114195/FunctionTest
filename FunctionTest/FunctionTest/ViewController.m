@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TestCell.h"
 #import "GestureVC.h"
+#import "AnimationVC.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,7 +29,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.dataArray = @[@"gestureVC"];
+    self.dataArray = @[@"gestureVC", @"动画效果"];
     
     [self tableViewConfigure];
     
@@ -128,6 +129,9 @@
             
         case 1:{
             
+            AnimationVC *animationVC = [[AnimationVC alloc] init];
+            
+            [self.navigationController pushViewController:animationVC animated:YES];
             
             break;
         }

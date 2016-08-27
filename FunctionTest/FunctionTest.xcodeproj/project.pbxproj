@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75417DA71D719DA400522F64 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75417DA61D719DA400522F64 /* AnimationVC.m */; };
 		757301AE1D5B48FF00253AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301AD1D5B48FF00253AC9 /* main.m */; };
 		757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301B01D5B48FF00253AC9 /* AppDelegate.m */; };
 		757301B41D5B48FF00253AC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301B31D5B48FF00253AC9 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75417DA51D719DA400522F64 /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
+		75417DA61D719DA400522F64 /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
 		757301A91D5B48FF00253AC9 /* FunctionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757301AD1D5B48FF00253AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		757301AF1D5B48FF00253AC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75417DA41D719D9400522F64 /* AnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				75417DA51D719DA400522F64 /* AnimationVC.h */,
+				75417DA61D719DA400522F64 /* AnimationVC.m */,
+			);
+			path = AnimationTest;
+			sourceTree = "<group>";
+		};
 		757301A01D5B48FF00253AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +105,7 @@
 		757301C71D5B4D9300253AC9 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
+				75417DA41D719D9400522F64 /* AnimationTest */,
 				757301C81D5B4DB300253AC9 /* GestureVC */,
 			);
 			path = TestVC;
@@ -182,6 +195,7 @@
 				757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */,
 				757301AE1D5B48FF00253AC9 /* main.m in Sources */,
 				757301CB1D5B4DC500253AC9 /* GestureVC.m in Sources */,
+				75417DA71D719DA400522F64 /* AnimationVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +348,7 @@
 				757301C21D5B48FF00253AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
