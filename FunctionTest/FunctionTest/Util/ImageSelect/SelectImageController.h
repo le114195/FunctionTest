@@ -10,4 +10,8 @@
 
 @interface SelectImageController : UIViewController
 
+
++ (instancetype)selectImageWithCompletion:(CompletionBlock)completion;
+
+
 @end

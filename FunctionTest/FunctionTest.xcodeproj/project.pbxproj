@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		75417DA71D719DA400522F64 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75417DA61D719DA400522F64 /* AnimationVC.m */; };
+		756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69E91D75C40D00704334 /* MBProgressHUD.m */; };
+		756D69EE1D75CD6100704334 /* AlumTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69ED1D75CD6100704334 /* AlumTestVC.m */; };
 		757301AE1D5B48FF00253AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301AD1D5B48FF00253AC9 /* main.m */; };
 		757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301B01D5B48FF00253AC9 /* AppDelegate.m */; };
 		757301B41D5B48FF00253AC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301B31D5B48FF00253AC9 /* ViewController.m */; };
@@ -34,6 +36,10 @@
 /* Begin PBXFileReference section */
 		75417DA51D719DA400522F64 /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
 		75417DA61D719DA400522F64 /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
+		756D69E81D75C40D00704334 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		756D69E91D75C40D00704334 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		756D69EC1D75CD6100704334 /* AlumTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlumTestVC.h; sourceTree = "<group>"; };
+		756D69ED1D75CD6100704334 /* AlumTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlumTestVC.m; sourceTree = "<group>"; };
 		757301A91D5B48FF00253AC9 /* FunctionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757301AD1D5B48FF00253AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		757301AF1D5B48FF00253AC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +107,24 @@
 			path = AnimationTest;
 			sourceTree = "<group>";
 		};
+		756D69E71D75C40D00704334 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				756D69E81D75C40D00704334 /* MBProgressHUD.h */,
+				756D69E91D75C40D00704334 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		756D69EB1D75CD5400704334 /* AlumTest */ = {
+			isa = PBXGroup;
+			children = (
+				756D69EC1D75CD6100704334 /* AlumTestVC.h */,
+				756D69ED1D75CD6100704334 /* AlumTestVC.m */,
+			);
+			path = AlumTest;
+			sourceTree = "<group>";
+		};
 		757301A01D5B48FF00253AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +174,7 @@
 		757301C71D5B4D9300253AC9 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
+				756D69EB1D75CD5400704334 /* AlumTest */,
 				75417DA41D719D9400522F64 /* AnimationTest */,
 				757301C81D5B4DB300253AC9 /* GestureVC */,
 			);
@@ -187,6 +212,7 @@
 		75A43B801D75A781002DE0CF /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				756D69E71D75C40D00704334 /* MBProgressHUD */,
 				75A43B811D75A781002DE0CF /* Masonry */,
 			);
 			path = Lib;
@@ -299,10 +325,12 @@
 				75A43BA31D75A781002DE0CF /* NSArray+MASAdditions.m in Sources */,
 				75A43BA21D75A781002DE0CF /* MASViewConstraint.m in Sources */,
 				757301B41D5B48FF00253AC9 /* ViewController.m in Sources */,
+				756D69EE1D75CD6100704334 /* AlumTestVC.m in Sources */,
 				75A43B9F1D75A781002DE0CF /* MASConstraintMaker.m in Sources */,
 				75A43BA51D75A781002DE0CF /* View+MASAdditions.m in Sources */,
 				757301C51D5B49B600253AC9 /* TestCell.m in Sources */,
 				75A43B9E1D75A781002DE0CF /* MASConstraint.m in Sources */,
+				756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */,
 				75A43BA91D75ADE4002DE0CF /* SelectImageCell.m in Sources */,
 				757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */,
 				75A43BA11D75A781002DE0CF /* MASViewAttribute.m in Sources */,

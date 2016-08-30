@@ -11,6 +11,7 @@
 #import "GestureVC.h"
 #import "AnimationVC.h"
 #import "SelectImageController.h"
+#import "AlumTestVC.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -139,9 +140,9 @@
             
         case 2:{
         
-            SelectImageController *selectVC = [[SelectImageController alloc] init];
+            AlumTestVC *alumVC = [[AlumTestVC alloc] init];
             
-            [self presentViewController:selectVC animated:YES completion:nil];
+            [self.navigationController pushViewController:alumVC animated:YES];
             
             break;
         }
