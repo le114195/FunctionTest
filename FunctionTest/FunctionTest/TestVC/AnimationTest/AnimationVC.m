@@ -53,7 +53,6 @@
     CGPathRelease(path);
     keyframeAnimation.duration = 3;
     [self.redView.layer addAnimation:keyframeAnimation forKey:@"KCKeyframeAnimation_Position"];
-    
 }
 
 
@@ -67,7 +66,6 @@
     CGPathAddQuadCurveToPoint(path, NULL, 100, 150, 47.5, height);
     keyframeAnimation.path = path;
     CGPathRelease(path);
-    
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     // 缩放倍数

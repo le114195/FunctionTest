@@ -10,6 +10,7 @@
 #import "TestCell.h"
 #import "GestureVC.h"
 #import "AnimationVC.h"
+#import "SelectImageController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -29,7 +30,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.dataArray = @[@"gestureVC", @"动画效果"];
+    self.dataArray = @[@"gestureVC", @"动画效果", @"相册"];
     
     [self tableViewConfigure];
     
@@ -132,6 +133,15 @@
             AnimationVC *animationVC = [[AnimationVC alloc] init];
             
             [self.navigationController pushViewController:animationVC animated:YES];
+            
+            break;
+        }
+            
+        case 2:{
+        
+            SelectImageController *selectVC = [[SelectImageController alloc] init];
+            
+            [self presentViewController:selectVC animated:YES completion:nil];
             
             break;
         }
