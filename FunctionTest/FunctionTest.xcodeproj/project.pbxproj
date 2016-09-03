@@ -31,6 +31,7 @@
 		75A43BA51D75A781002DE0CF /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B981D75A781002DE0CF /* View+MASAdditions.m */; };
 		75A43BA61D75A781002DE0CF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B9B1D75A781002DE0CF /* ViewController+MASAdditions.m */; };
 		75A43BA91D75ADE4002DE0CF /* SelectImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43BA81D75ADE4002DE0CF /* SelectImageCell.m */; };
+		75FE84CE1D7A7EBE00E45DBE /* ContextRefVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE84CD1D7A7EBE00E45DBE /* ContextRefVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,8 @@
 		75A43B9B1D75A781002DE0CF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		75A43BA71D75ADE4002DE0CF /* SelectImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImageCell.h; sourceTree = "<group>"; };
 		75A43BA81D75ADE4002DE0CF /* SelectImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImageCell.m; sourceTree = "<group>"; };
+		75FE84CC1D7A7EBE00E45DBE /* ContextRefVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextRefVC.h; sourceTree = "<group>"; };
+		75FE84CD1D7A7EBE00E45DBE /* ContextRefVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextRefVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 		757301C71D5B4D9300253AC9 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
+				75FE84C81D7A7E7300E45DBE /* CGContextRefVC */,
 				756D69EB1D75CD5400704334 /* AlumTest */,
 				75417DA41D719D9400522F64 /* AnimationTest */,
 				757301C81D5B4DB300253AC9 /* GestureVC */,
@@ -251,6 +255,39 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		75FE84C81D7A7E7300E45DBE /* CGContextRefVC */ = {
+			isa = PBXGroup;
+			children = (
+				75FE84C91D7A7E9F00E45DBE /* Controller */,
+				75FE84CA1D7A7E9F00E45DBE /* Model */,
+				75FE84CB1D7A7E9F00E45DBE /* View */,
+			);
+			path = CGContextRefVC;
+			sourceTree = "<group>";
+		};
+		75FE84C91D7A7E9F00E45DBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75FE84CC1D7A7EBE00E45DBE /* ContextRefVC.h */,
+				75FE84CD1D7A7EBE00E45DBE /* ContextRefVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75FE84CA1D7A7E9F00E45DBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75FE84CB1D7A7E9F00E45DBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A43BA31D75A781002DE0CF /* NSArray+MASAdditions.m in Sources */,
+				75FE84CE1D7A7EBE00E45DBE /* ContextRefVC.m in Sources */,
 				75A43BA21D75A781002DE0CF /* MASViewConstraint.m in Sources */,
 				757301B41D5B48FF00253AC9 /* ViewController.m in Sources */,
 				756D69EE1D75CD6100704334 /* AlumTestVC.m in Sources */,

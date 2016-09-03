@@ -12,6 +12,7 @@
 #import "AnimationVC.h"
 #import "SelectImageController.h"
 #import "AlumTestVC.h"
+#import "ContextRefVC.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -31,7 +32,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.dataArray = @[@"gestureVC", @"动画效果", @"相册"];
+    self.dataArray = @[@"gestureVC", @"动画效果", @"相册", @"画布"];
     
     [self tableViewConfigure];
     
@@ -121,31 +122,28 @@
 {
     
     switch (indexPath.row) {
-        case 0:{
+        case 0:{//手势
             GestureVC *gestureVC = [[GestureVC alloc] init];
-            
             [self.navigationController pushViewController:gestureVC animated:YES];
-            
             break;
         }
-            
-        case 1:{
-            
+        case 1:{//动画
             AnimationVC *animationVC = [[AnimationVC alloc] init];
-            
             [self.navigationController pushViewController:animationVC animated:YES];
-            
             break;
         }
-            
-        case 2:{
-        
+        case 2:{//相册
             AlumTestVC *alumVC = [[AlumTestVC alloc] init];
-            
             [self.navigationController pushViewController:alumVC animated:YES];
-            
             break;
         }
+        case 3:{//画布
+            ContextRefVC *vc = [[ContextRefVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
+            
             
         default:
             break;
