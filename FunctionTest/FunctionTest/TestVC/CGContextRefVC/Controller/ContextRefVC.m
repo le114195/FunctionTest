@@ -36,6 +36,8 @@
     self.imgView = [[ImgViewDraw alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
     self.imgView.contentMode = UIViewContentModeScaleAspectFit;
     
+    self.imgView.backgroundColor = [UIColor grayColor];
+    
     [self.view addSubview:self.imgView];
     
     
