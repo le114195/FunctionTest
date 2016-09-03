@@ -1,13 +1,13 @@
 //
-//  AlumTestVC.h
+//  ImgViewDraw.h
 //  FunctionTest
 //
-//  Created by 勒俊 on 16/8/30.
+//  Created by 勒俊 on 16/9/3.
 //  Copyright © 2016年 勒俊. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface AlumTestVC : UIViewController
+@interface ImgViewDraw : UIImageView
 
 @end

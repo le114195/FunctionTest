@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		75417DA71D719DA400522F64 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75417DA61D719DA400522F64 /* AnimationVC.m */; };
 		756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69E91D75C40D00704334 /* MBProgressHUD.m */; };
-		756D69EE1D75CD6100704334 /* AlumTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69ED1D75CD6100704334 /* AlumTestVC.m */; };
 		757301AE1D5B48FF00253AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301AD1D5B48FF00253AC9 /* main.m */; };
 		757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301B01D5B48FF00253AC9 /* AppDelegate.m */; };
 		757301B41D5B48FF00253AC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301B31D5B48FF00253AC9 /* ViewController.m */; };
@@ -18,7 +17,6 @@
 		757301BC1D5B48FF00253AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757301BA1D5B48FF00253AC9 /* LaunchScreen.storyboard */; };
 		757301C51D5B49B600253AC9 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301C41D5B49B600253AC9 /* TestCell.m */; };
 		757301CB1D5B4DC500253AC9 /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301CA1D5B4DC500253AC9 /* GestureVC.m */; };
-		75A43B7F1D75A6B7002DE0CF /* SelectImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B7E1D75A6B7002DE0CF /* SelectImageController.m */; };
 		75A43B9C1D75A781002DE0CF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75A43B821D75A781002DE0CF /* Info.plist */; };
 		75A43B9D1D75A781002DE0CF /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B841D75A781002DE0CF /* MASCompositeConstraint.m */; };
 		75A43B9E1D75A781002DE0CF /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B871D75A781002DE0CF /* MASConstraint.m */; };
@@ -30,8 +28,10 @@
 		75A43BA41D75A781002DE0CF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B961D75A781002DE0CF /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		75A43BA51D75A781002DE0CF /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B981D75A781002DE0CF /* View+MASAdditions.m */; };
 		75A43BA61D75A781002DE0CF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43B9B1D75A781002DE0CF /* ViewController+MASAdditions.m */; };
-		75A43BA91D75ADE4002DE0CF /* SelectImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A43BA81D75ADE4002DE0CF /* SelectImageCell.m */; };
 		75FE84CE1D7A7EBE00E45DBE /* ContextRefVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE84CD1D7A7EBE00E45DBE /* ContextRefVC.m */; };
+		75FE84D11D7A7F9C00E45DBE /* DemoView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE84D01D7A7F9C00E45DBE /* DemoView1.m */; };
+		75FE84D41D7A9BC900E45DBE /* ImgViewDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE84D31D7A9BC900E45DBE /* ImgViewDraw.m */; };
+		75FE84D81D7A9CDF00E45DBE /* ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE84D71D7A9CDF00E45DBE /* ImagePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +39,6 @@
 		75417DA61D719DA400522F64 /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
 		756D69E81D75C40D00704334 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		756D69E91D75C40D00704334 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		756D69EC1D75CD6100704334 /* AlumTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlumTestVC.h; sourceTree = "<group>"; };
-		756D69ED1D75CD6100704334 /* AlumTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlumTestVC.m; sourceTree = "<group>"; };
 		757301A91D5B48FF00253AC9 /* FunctionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757301AD1D5B48FF00253AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		757301AF1D5B48FF00253AC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,8 +54,6 @@
 		757301C61D5B4A6F00253AC9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		757301C91D5B4DC500253AC9 /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		757301CA1D5B4DC500253AC9 /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
-		75A43B7D1D75A6B7002DE0CF /* SelectImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImageController.h; sourceTree = "<group>"; };
-		75A43B7E1D75A6B7002DE0CF /* SelectImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImageController.m; sourceTree = "<group>"; };
 		75A43B821D75A781002DE0CF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A43B831D75A781002DE0CF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		75A43B841D75A781002DE0CF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -84,10 +80,14 @@
 		75A43B991D75A781002DE0CF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		75A43B9A1D75A781002DE0CF /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		75A43B9B1D75A781002DE0CF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		75A43BA71D75ADE4002DE0CF /* SelectImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImageCell.h; sourceTree = "<group>"; };
-		75A43BA81D75ADE4002DE0CF /* SelectImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImageCell.m; sourceTree = "<group>"; };
 		75FE84CC1D7A7EBE00E45DBE /* ContextRefVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextRefVC.h; sourceTree = "<group>"; };
 		75FE84CD1D7A7EBE00E45DBE /* ContextRefVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextRefVC.m; sourceTree = "<group>"; };
+		75FE84CF1D7A7F9C00E45DBE /* DemoView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView1.h; sourceTree = "<group>"; };
+		75FE84D01D7A7F9C00E45DBE /* DemoView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView1.m; sourceTree = "<group>"; };
+		75FE84D21D7A9BC900E45DBE /* ImgViewDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgViewDraw.h; sourceTree = "<group>"; };
+		75FE84D31D7A9BC900E45DBE /* ImgViewDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgViewDraw.m; sourceTree = "<group>"; };
+		75FE84D61D7A9CDF00E45DBE /* ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePicker.h; sourceTree = "<group>"; };
+		75FE84D71D7A9CDF00E45DBE /* ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,15 +117,6 @@
 				756D69E91D75C40D00704334 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		756D69EB1D75CD5400704334 /* AlumTest */ = {
-			isa = PBXGroup;
-			children = (
-				756D69EC1D75CD6100704334 /* AlumTestVC.h */,
-				756D69ED1D75CD6100704334 /* AlumTestVC.m */,
-			);
-			path = AlumTest;
 			sourceTree = "<group>";
 		};
 		757301A01D5B48FF00253AC9 = {
@@ -178,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				75FE84C81D7A7E7300E45DBE /* CGContextRefVC */,
-				756D69EB1D75CD5400704334 /* AlumTest */,
 				75417DA41D719D9400522F64 /* AnimationTest */,
 				757301C81D5B4DB300253AC9 /* GestureVC */,
 			);
@@ -197,20 +187,9 @@
 		75A43B7B1D75A6A1002DE0CF /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				75A43B7C1D75A6A1002DE0CF /* ImageSelect */,
+				75FE84D51D7A9CDF00E45DBE /* ImageSelect */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		75A43B7C1D75A6A1002DE0CF /* ImageSelect */ = {
-			isa = PBXGroup;
-			children = (
-				75A43B7D1D75A6B7002DE0CF /* SelectImageController.h */,
-				75A43B7E1D75A6B7002DE0CF /* SelectImageController.m */,
-				75A43BA71D75ADE4002DE0CF /* SelectImageCell.h */,
-				75A43BA81D75ADE4002DE0CF /* SelectImageCell.m */,
-			);
-			path = ImageSelect;
 			sourceTree = "<group>";
 		};
 		75A43B801D75A781002DE0CF /* Lib */ = {
@@ -284,8 +263,21 @@
 		75FE84CB1D7A7E9F00E45DBE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75FE84CF1D7A7F9C00E45DBE /* DemoView1.h */,
+				75FE84D01D7A7F9C00E45DBE /* DemoView1.m */,
+				75FE84D21D7A9BC900E45DBE /* ImgViewDraw.h */,
+				75FE84D31D7A9BC900E45DBE /* ImgViewDraw.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		75FE84D51D7A9CDF00E45DBE /* ImageSelect */ = {
+			isa = PBXGroup;
+			children = (
+				75FE84D61D7A9CDF00E45DBE /* ImagePicker.h */,
+				75FE84D71D7A9CDF00E45DBE /* ImagePicker.m */,
+			);
+			path = ImageSelect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,17 +355,17 @@
 				75FE84CE1D7A7EBE00E45DBE /* ContextRefVC.m in Sources */,
 				75A43BA21D75A781002DE0CF /* MASViewConstraint.m in Sources */,
 				757301B41D5B48FF00253AC9 /* ViewController.m in Sources */,
-				756D69EE1D75CD6100704334 /* AlumTestVC.m in Sources */,
+				75FE84D11D7A7F9C00E45DBE /* DemoView1.m in Sources */,
 				75A43B9F1D75A781002DE0CF /* MASConstraintMaker.m in Sources */,
+				75FE84D81D7A9CDF00E45DBE /* ImagePicker.m in Sources */,
 				75A43BA51D75A781002DE0CF /* View+MASAdditions.m in Sources */,
 				757301C51D5B49B600253AC9 /* TestCell.m in Sources */,
 				75A43B9E1D75A781002DE0CF /* MASConstraint.m in Sources */,
 				756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */,
-				75A43BA91D75ADE4002DE0CF /* SelectImageCell.m in Sources */,
+				75FE84D41D7A9BC900E45DBE /* ImgViewDraw.m in Sources */,
 				757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */,
 				75A43BA11D75A781002DE0CF /* MASViewAttribute.m in Sources */,
 				75A43BA41D75A781002DE0CF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				75A43B7F1D75A6B7002DE0CF /* SelectImageController.m in Sources */,
 				75A43B9D1D75A781002DE0CF /* MASCompositeConstraint.m in Sources */,
 				75A43BA01D75A781002DE0CF /* MASLayoutConstraint.m in Sources */,
 				757301AE1D5B48FF00253AC9 /* main.m in Sources */,
