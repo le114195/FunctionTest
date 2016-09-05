@@ -10,6 +10,7 @@
 #import "DemoView1.h"
 #import "ImgViewDraw.h"
 #import "ImagePicker.h"
+#import "CircleView.h"
 
 @interface ContextRefVC ()
 
@@ -29,27 +30,14 @@
     
     
 //    DemoView1 *demo1 = [[DemoView1 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
-//    demo1.backgroundColor = [UIColor redColor];
+//    demo1.backgroundColor = [UIColor whiteColor];
 //    [self.view addSubview:demo1];
     
     
-    self.imgView = [[ImgViewDraw alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
-    self.imgView.contentMode = UIViewContentModeScaleAspectFit;
-    
-    self.imgView.backgroundColor = [UIColor grayColor];
-    
-    [self.view addSubview:self.imgView];
+    [self circleTest];
     
     
     
-    
-    
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, Screen_Height - 44, 60, 44)];
-    [self.view addSubview:button];
-    button.backgroundColor = [UIColor redColor];
-    [button setTitle:@"换图" forState:UIControlStateNormal];
-    
-    [button addTarget:self action:@selector(changImg) forControlEvents:UIControlEventTouchUpInside];
     
     // Do any additional setup after loading the view.
 }
@@ -61,6 +49,21 @@
 
 
 #pragma mark - 子控件初始化
+
+
+
+
+- (void)circleTest {
+
+    CircleView *circle = [[CircleView alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
+    [self.view addSubview:circle];
+    circle.backgroundColor = [UIColor whiteColor];
+    
+}
+
+
+
+
 
 
 
