@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		750B31441D7DB148000FB058 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B31431D7DB148000FB058 /* CircleView.m */; };
 		75417DA71D719DA400522F64 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75417DA61D719DA400522F64 /* AnimationVC.m */; };
+		7566D8C11D7EFE5E00279FFB /* PathFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566D8C01D7EFE5E00279FFB /* PathFunc.m */; };
 		756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69E91D75C40D00704334 /* MBProgressHUD.m */; };
 		757301AE1D5B48FF00253AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301AD1D5B48FF00253AC9 /* main.m */; };
 		757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301B01D5B48FF00253AC9 /* AppDelegate.m */; };
@@ -40,6 +41,8 @@
 		750B31431D7DB148000FB058 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		75417DA51D719DA400522F64 /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
 		75417DA61D719DA400522F64 /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
+		7566D8BF1D7EFE5E00279FFB /* PathFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathFunc.h; sourceTree = "<group>"; };
+		7566D8C01D7EFE5E00279FFB /* PathFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathFunc.m; sourceTree = "<group>"; };
 		756D69E81D75C40D00704334 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		756D69E91D75C40D00704334 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		757301A91D5B48FF00253AC9 /* FunctionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +114,15 @@
 				75417DA61D719DA400522F64 /* AnimationVC.m */,
 			);
 			path = AnimationTest;
+			sourceTree = "<group>";
+		};
+		7566D8BE1D7EFE2500279FFB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7566D8BF1D7EFE5E00279FFB /* PathFunc.h */,
+				7566D8C01D7EFE5E00279FFB /* PathFunc.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		756D69E71D75C40D00704334 /* MBProgressHUD */ = {
@@ -240,6 +252,7 @@
 		75FE84C81D7A7E7300E45DBE /* CGContextRefVC */ = {
 			isa = PBXGroup;
 			children = (
+				7566D8BE1D7EFE2500279FFB /* Util */,
 				75FE84C91D7A7E9F00E45DBE /* Controller */,
 				75FE84CA1D7A7E9F00E45DBE /* Model */,
 				75FE84CB1D7A7E9F00E45DBE /* View */,
@@ -316,6 +329,7 @@
 				TargetAttributes = {
 					757301A81D5B48FF00253AC9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Y9E6T3VGEQ;
 					};
 				};
 			};
@@ -375,6 +389,7 @@
 				75A43B9D1D75A781002DE0CF /* MASCompositeConstraint.m in Sources */,
 				75A43BA01D75A781002DE0CF /* MASLayoutConstraint.m in Sources */,
 				757301AE1D5B48FF00253AC9 /* main.m in Sources */,
+				7566D8C11D7EFE5E00279FFB /* PathFunc.m in Sources */,
 				757301CB1D5B4DC500253AC9 /* GestureVC.m in Sources */,
 				75A43BA61D75A781002DE0CF /* ViewController+MASAdditions.m in Sources */,
 				75417DA71D719DA400522F64 /* AnimationVC.m in Sources */,
@@ -495,7 +510,7 @@
 				GCC_PREFIX_HEADER = FunctionTest/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imsiper.tj.FunctionTest;
+				PRODUCT_BUNDLE_IDENTIFIER = lj.FunctionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -508,7 +523,7 @@
 				GCC_PREFIX_HEADER = FunctionTest/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imsiper.tj.FunctionTest;
+				PRODUCT_BUNDLE_IDENTIFIER = lj.FunctionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
