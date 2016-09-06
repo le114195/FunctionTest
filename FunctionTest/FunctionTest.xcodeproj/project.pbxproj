@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750B31441D7DB148000FB058 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B31431D7DB148000FB058 /* CircleView.m */; };
 		75417DA71D719DA400522F64 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75417DA61D719DA400522F64 /* AnimationVC.m */; };
 		756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69E91D75C40D00704334 /* MBProgressHUD.m */; };
 		757301AE1D5B48FF00253AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 757301AD1D5B48FF00253AC9 /* main.m */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750B31421D7DB148000FB058 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		750B31431D7DB148000FB058 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		75417DA51D719DA400522F64 /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
 		75417DA61D719DA400522F64 /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
 		756D69E81D75C40D00704334 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				75FE84D01D7A7F9C00E45DBE /* DemoView1.m */,
 				75FE84D21D7A9BC900E45DBE /* ImgViewDraw.h */,
 				75FE84D31D7A9BC900E45DBE /* ImgViewDraw.m */,
+				750B31421D7DB148000FB058 /* CircleView.h */,
+				750B31431D7DB148000FB058 /* CircleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				TargetAttributes = {
 					757301A81D5B48FF00253AC9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Y9E6T3VGEQ;
 					};
 				};
 			};
@@ -357,6 +363,7 @@
 				757301B41D5B48FF00253AC9 /* ViewController.m in Sources */,
 				75FE84D11D7A7F9C00E45DBE /* DemoView1.m in Sources */,
 				75A43B9F1D75A781002DE0CF /* MASConstraintMaker.m in Sources */,
+				750B31441D7DB148000FB058 /* CircleView.m in Sources */,
 				75FE84D81D7A9CDF00E45DBE /* ImagePicker.m in Sources */,
 				75A43BA51D75A781002DE0CF /* View+MASAdditions.m in Sources */,
 				757301C51D5B49B600253AC9 /* TestCell.m in Sources */,
@@ -485,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = FunctionTest/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = FunctionTest/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
