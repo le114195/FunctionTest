@@ -316,7 +316,6 @@
 				TargetAttributes = {
 					757301A81D5B48FF00253AC9 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Y9E6T3VGEQ;
 					};
 				};
 			};
@@ -496,7 +495,7 @@
 				GCC_PREFIX_HEADER = FunctionTest/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TJ.FunctionTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imsiper.tj.FunctionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -509,7 +508,7 @@
 				GCC_PREFIX_HEADER = FunctionTest/PrefixHeader.pch;
 				INFOPLIST_FILE = FunctionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TJ.FunctionTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imsiper.tj.FunctionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

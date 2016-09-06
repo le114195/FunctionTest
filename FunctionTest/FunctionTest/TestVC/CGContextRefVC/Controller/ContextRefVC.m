@@ -28,8 +28,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    
-<<<<<<< HEAD
+
     DemoView1 *demo1 = [[DemoView1 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
     demo1.backgroundColor = [UIColor redColor];
     [self.view addSubview:demo1];
@@ -52,7 +51,6 @@
 //    [button setTitle:@"换图" forState:UIControlStateNormal];
 //    
 //    [button addTarget:self action:@selector(changImg) forControlEvents:UIControlEventTouchUpInside];
-=======
 //    DemoView1 *demo1 = [[DemoView1 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
 //    demo1.backgroundColor = [UIColor whiteColor];
 //    [self.view addSubview:demo1];
@@ -60,9 +58,6 @@
     
     [self circleTest];
     
-    
-    
->>>>>>> a7c5b871c47895a310c6669fb0b79edbeb3c813f
     
     // Do any additional setup after loading the view.
 }

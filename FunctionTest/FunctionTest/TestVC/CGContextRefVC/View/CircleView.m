@@ -8,7 +8,10 @@
 
 #import "CircleView.h"
 
-#define CircleR         30
+#define CircleR         10
+
+#define Distance        30
+
 
 
 @interface CircleView ()
@@ -53,43 +56,81 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint location =[touch locationInView:self];
-    NSValue *value = [NSValue valueWithCGPoint:location];
-    
+
     self.currentPoint = location;
-    
-    [self.pointArrM addObject:value];
-    
 }
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self];
-    NSValue *value = [NSValue valueWithCGPoint:location];
     
-    
-//    [self distance:location];
     
     double angle = atan((location.y - self.currentPoint.y) / (location.x - self.currentPoint.x));
     CGFloat distance = hypot(fabs(location.y - self.currentPoint.y), fabs(location.x - self.currentPoint.x));
-    if (fabs(self.angle - angle) < 0.5 && distance < CircleR) {
+    
+    if (distance < 2 * CircleR) {
         return;
     }
+    if (fabs(self.angle - angle) < M_PI_4 && distance < Distance) {
+        return;
+    }else if (fabs(self.angle - angle) < M_PI_4 && distance > Distance) {
+        
+        int count = distance / Distance;
+        for (int i = 0; i < count; i++) {
+            self.currentPoint = [self newPointWithLastLocation:self.currentPoint local:location distance:Distance];
+            NSValue *value = [NSValue valueWithCGPoint:self.currentPoint];
+            [self.pointArrM addObject:value];
+        }
+    }else {
+        self.currentPoint = location;
+        NSValue *value = [NSValue valueWithCGPoint:self.currentPoint];
+        [self.pointArrM addObject:value];
+    }
     self.angle = angle;
-    self.currentPoint = location;
-    
-    
-    [self.pointArrM addObject:value];
+
     [self setNeedsDisplay];
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
     
+    
+    
 }
 
 
-
+/**
+ *  利用两点式得到一个一次函数，然后求出距离第一个点距离为distance 的点
+ *
+ *  @param lastLocation 第一个点
+ *  @param location     第二个点
+ *  @param distance     待求的点到第一个点的距离
+ *
+ *  @return 返回待求的点
+ */
+- (CGPoint)newPointWithLastLocation:(CGPoint)lastLocation local:(CGPoint)location distance:(float)distance
+{
+    float x0, y0, a, b, c, c0;
+    float slope; //斜率
+    
+    double angle = atan((location.y - lastLocation.y) / (location.x - lastLocation.x));
+    slope = tan(angle);
+    
+    c0 = location.y - tan(angle) * location.x;
+    
+    a = slope * slope + 1;
+    b = 2 * slope * (c0 - lastLocation.y) - 2 * lastLocation.x;
+    c = lastLocation.x * lastLocation.x + (c0 - lastLocation.y) * (c0 - lastLocation.y) - distance * distance;
+    
+    if (lastLocation.x < location.x) {
+        x0 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+    }else {
+        x0 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+    }
+    y0 = slope * x0 + c0;
+    
+    return CGPointMake(x0, y0);
+}
 
 
 
@@ -107,8 +148,6 @@
         CGContextAddEllipseInRect(context, rect);
     }
     
-    [[UIColor colorWithRed:1.0 green:0 blue:0 alpha:0.2] set];
-    
     CGContextFillPath(context);
     
 }
@@ -116,12 +155,9 @@
 
 - (CGRect)circleWithPoint:(CGPoint)point speed:(CGFloat)speed
 {
-    CGFloat r = 1 / speed;
-    CGRect rect = CGRectMake(point.x - r, point.y - r, r, r);
+    CGRect rect = CGRectMake(point.x - CircleR, point.y - CircleR, CircleR * 2, CircleR * 2);
     return rect;
 }
-
-
 
 
 #pragma mark - 等距
@@ -134,7 +170,6 @@
         
     }
     self.angle = angle;
-    
     
     return rect;
 }
