@@ -28,10 +28,7 @@
     redView.backgroundColor = [UIColor redColor];
     self.redView = redView;
     
-    
-    UIView *redView1 = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
-    [self.view addSubview:redView1];
-    redView1.backgroundColor = [UIColor redColor];
+
     
     // Do any additional setup after loading the view.
 }
@@ -48,12 +45,34 @@
     CAKeyframeAnimation *keyframeAnimation=[CAKeyframeAnimation animationWithKeyPath:@"position"];
     CGMutablePathRef path = CGPathCreateMutable();
     
+    
     CGPathMoveToPoint(path, NULL, self.redView.center.x, self.redView.center.y);//移动到起始点
     CGPathAddQuadCurveToPoint(path, NULL, 200, 200, self.redView.center.x, 400);
     keyframeAnimation.path = path;
     CGPathRelease(path);
     keyframeAnimation.duration = 3;
     [self.redView.layer addAnimation:keyframeAnimation forKey:@"KCKeyframeAnimation_Position"];
+}
+
+/**
+ *  移动动画
+ */
+- (void)positionAni
+{
+    /* 移动 */
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    
+    // 动画选项的设定
+    animation.duration = 1.0; // 持续时间
+    animation.repeatCount = 5; // 重复次数
+    animation.autoreverses = YES;
+    // 起始帧和终了帧的设定
+    animation.fromValue = [NSValue valueWithCGPoint:self.redView.layer.position]; // 起始帧
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.redView.layer.position.x, self.redView.layer.position.y + 20)]; // 终了帧
+    
+    // 添加动画
+    [self.redView.layer addAnimation:animation forKey:@"move-layer"];
+    
 }
 
 
@@ -99,7 +118,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self position];
+    [self positionAni];
 }
 
 
