@@ -7,10 +7,11 @@
 //
 
 #import "CircleView.h"
+#import "PathFunc.h"
 
-#define CircleR         10
+#define CircleR         8
 
-#define Distance        30
+#define Distance        20
 
 
 
@@ -73,13 +74,14 @@
     }
     if (fabs(self.angle - angle) < M_PI_4 && distance < Distance) {
         return;
-    }else if (fabs(self.angle - angle) < M_PI_4 && distance > Distance) {
+    }else if (distance > Distance) {
         
         int count = distance / Distance;
         for (int i = 0; i < count; i++) {
-            self.currentPoint = [self newPointWithLastLocation:self.currentPoint local:location distance:Distance];
+            self.currentPoint = [PathFunc newPointWithLastLocation:self.currentPoint local:location distance:Distance];
             NSValue *value = [NSValue valueWithCGPoint:self.currentPoint];
             [self.pointArrM addObject:value];
+            
         }
     }else {
         self.currentPoint = location;
@@ -99,40 +101,6 @@
 }
 
 
-/**
- *  利用两点式得到一个一次函数，然后求出距离第一个点距离为distance 的点
- *
- *  @param lastLocation 第一个点
- *  @param location     第二个点
- *  @param distance     待求的点到第一个点的距离
- *
- *  @return 返回待求的点
- */
-- (CGPoint)newPointWithLastLocation:(CGPoint)lastLocation local:(CGPoint)location distance:(float)distance
-{
-    float x0, y0, a, b, c, c0;
-    float slope; //斜率
-    
-    double angle = atan((location.y - lastLocation.y) / (location.x - lastLocation.x));
-    slope = tan(angle);
-    
-    c0 = location.y - tan(angle) * location.x;
-    
-    a = slope * slope + 1;
-    b = 2 * slope * (c0 - lastLocation.y) - 2 * lastLocation.x;
-    c = lastLocation.x * lastLocation.x + (c0 - lastLocation.y) * (c0 - lastLocation.y) - distance * distance;
-    
-    if (lastLocation.x < location.x) {
-        x0 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
-    }else {
-        x0 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
-    }
-    y0 = slope * x0 + c0;
-    
-    return CGPointMake(x0, y0);
-}
-
-
 
 #pragma mark - speed
 - (void)circleTest {
@@ -149,7 +117,6 @@
     }
     
     CGContextFillPath(context);
-    
 }
 
 
