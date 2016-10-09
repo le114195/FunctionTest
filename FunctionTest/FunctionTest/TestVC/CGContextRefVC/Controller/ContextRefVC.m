@@ -11,6 +11,9 @@
 #import "ImgViewDraw.h"
 #import "ImagePicker.h"
 #import "CircleView.h"
+#import "DemoView2.h"
+
+
 
 @interface ContextRefVC ()
 
@@ -28,10 +31,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
+    DemoView2 *view2 = [[DemoView2 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
+    view2.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:view2];
+    
+    
+    
 
-    DemoView1 *demo1 = [[DemoView1 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
-    demo1.backgroundColor = [UIColor redColor];
-    [self.view addSubview:demo1];
+//    DemoView1 *demo1 = [[DemoView1 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
+//    demo1.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:demo1];
     
     
 //    self.imgView = [[ImgViewDraw alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
@@ -56,7 +66,7 @@
 //    [self.view addSubview:demo1];
     
     
-    [self circleTest];
+//    [self circleTest];
     
     
     // Do any additional setup after loading the view.
