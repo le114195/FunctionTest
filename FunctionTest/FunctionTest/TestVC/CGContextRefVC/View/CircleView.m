@@ -75,13 +75,11 @@
     if (fabs(self.angle - angle) < M_PI_4 && distance < Distance) {
         return;
     }else if (distance > Distance) {
-        
         int count = distance / Distance;
         for (int i = 0; i < count; i++) {
             self.currentPoint = [PathFunc newPointWithLastLocation:self.currentPoint local:location distance:Distance];
             NSValue *value = [NSValue valueWithCGPoint:self.currentPoint];
             [self.pointArrM addObject:value];
-            
         }
     }else {
         self.currentPoint = location;
@@ -89,7 +87,6 @@
         [self.pointArrM addObject:value];
     }
     self.angle = angle;
-
     [self setNeedsDisplay];
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
