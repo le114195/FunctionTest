@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		750B31441D7DB148000FB058 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B31431D7DB148000FB058 /* CircleView.m */; };
+		750C1D901D9CC2CE000060F5 /* DemoView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 750C1D8F1D9CC2CE000060F5 /* DemoView2.m */; };
 		75417DA71D719DA400522F64 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75417DA61D719DA400522F64 /* AnimationVC.m */; };
 		7566D8C11D7EFE5E00279FFB /* PathFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566D8C01D7EFE5E00279FFB /* PathFunc.m */; };
 		756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69E91D75C40D00704334 /* MBProgressHUD.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		750B31421D7DB148000FB058 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		750B31431D7DB148000FB058 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		750C1D8E1D9CC2CE000060F5 /* DemoView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView2.h; sourceTree = "<group>"; };
+		750C1D8F1D9CC2CE000060F5 /* DemoView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView2.m; sourceTree = "<group>"; };
 		75417DA51D719DA400522F64 /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
 		75417DA61D719DA400522F64 /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
 		7566D8BF1D7EFE5E00279FFB /* PathFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathFunc.h; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				75FE84D31D7A9BC900E45DBE /* ImgViewDraw.m */,
 				750B31421D7DB148000FB058 /* CircleView.h */,
 				750B31431D7DB148000FB058 /* CircleView.m */,
+				750C1D8E1D9CC2CE000060F5 /* DemoView2.h */,
+				750C1D8F1D9CC2CE000060F5 /* DemoView2.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				75A43BA11D75A781002DE0CF /* MASViewAttribute.m in Sources */,
 				75A43BA41D75A781002DE0CF /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				75A43B9D1D75A781002DE0CF /* MASCompositeConstraint.m in Sources */,
+				750C1D901D9CC2CE000060F5 /* DemoView2.m in Sources */,
 				75A43BA01D75A781002DE0CF /* MASLayoutConstraint.m in Sources */,
 				757301AE1D5B48FF00253AC9 /* main.m in Sources */,
 				7566D8C11D7EFE5E00279FFB /* PathFunc.m in Sources */,

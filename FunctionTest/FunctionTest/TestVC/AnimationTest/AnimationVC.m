@@ -30,6 +30,9 @@
     
 
     
+
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -118,9 +121,29 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self positionAni];
+    
+    
+    CATransform3D rotate = CATransform3DMakeRotation(M_PI/6, 0, 1, 0);
+    self.redView.layer.transform = CATransform3DPerspect(rotate, CGPointMake(0, 0), 200);
+
 }
 
+
+
+
+CATransform3D CATransform3DMakePerspective(CGPoint center, float disZ)
+{
+    CATransform3D transToCenter = CATransform3DMakeTranslation(-center.x, -center.y, 0);
+    CATransform3D transBack = CATransform3DMakeTranslation(center.x, center.y, 0);
+    CATransform3D scale = CATransform3DIdentity;
+    scale.m34 = -1.0f/disZ;
+    return CATransform3DConcat(CATransform3DConcat(transToCenter, scale), transBack);
+}
+
+CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, float disZ)
+{
+    return CATransform3DConcat(t, CATransform3DMakePerspective(center, disZ));
+}
 
 
 

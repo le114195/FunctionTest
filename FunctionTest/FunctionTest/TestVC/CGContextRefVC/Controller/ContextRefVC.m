@@ -11,6 +11,9 @@
 #import "ImgViewDraw.h"
 #import "ImagePicker.h"
 #import "CircleView.h"
+#import "DemoView2.h"
+
+
 
 @interface ContextRefVC ()
 
@@ -19,6 +22,9 @@
 
 @property (nonatomic, strong) ImagePicker           *imgPicker;
 
+@property (nonatomic, weak) DemoView2               *demo2;
+
+@property (nonatomic, assign) CGFloat               angle;
 
 @end
 
@@ -28,10 +34,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
+    DemoView2 *view2 = [[DemoView2 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
+    self.demo2 = view2;
+    view2.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:view2];
+    
+    
+    
 
-    DemoView1 *demo1 = [[DemoView1 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
-    demo1.backgroundColor = [UIColor redColor];
-    [self.view addSubview:demo1];
+//    DemoView1 *demo1 = [[DemoView1 alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
+//    demo1.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:demo1];
     
     
 //    self.imgView = [[ImgViewDraw alloc] initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
@@ -56,7 +70,7 @@
 //    [self.view addSubview:demo1];
     
     
-    [self circleTest];
+//    [self circleTest];
     
     
     // Do any additional setup after loading the view.
@@ -123,6 +137,15 @@
 #pragma mark - 私有方法
 
 
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    self.angle += M_PI_4;
+    
+    self.demo2.progress = self.angle;
+    
+}
 
 
 
