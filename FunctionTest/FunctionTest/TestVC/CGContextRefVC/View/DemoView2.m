@@ -8,55 +8,62 @@
 
 #import "DemoView2.h"
 
+@interface DemoView2 ()
+
+
+@property (nonatomic, assign) CGFloat           lastProgress;
+
+@end
+
+
 @implementation DemoView2
 
 
 
+- (void)drawRed
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetRGBStrokeColor(context, 1.0, 0, 0, 1.0);//画笔线的颜色
+    CGContextSetLineWidth(context, 2.0);//线的宽度
+    CGContextAddArc(context, self.frame.size.width * 0.5 - 25, self.frame.size.height * 0.5 - 25, 50, 0, M_PI * 2, 1);
+    CGContextDrawPath(context, kCGPathStroke);
+}
+
 
 - (void)drawRect:(CGRect)rect {
+    [self drawRed];
     [self drawLine];
+}
+
+- (instancetype)init
+{
+    if ([super init]) {
+        self.lastProgress = 0;
+    }
+    return self;
 }
 
 
 - (void)drawLine
 {
-    //提示 使用ref的对象不用使用*
-    //1.获取上下文.-UIView对应的上下文
+
     CGContextRef context = UIGraphicsGetCurrentContext();
-    //2.创建可变路径并设置路径
-    //当我们开发动画的时候，通常制定对象运动的路线，然后由动画负责动画效果
-    CGMutablePathRef path = CGPathCreateMutable();
-    //2-1.设置起始点
-    CGPathMoveToPoint(path, NULL, 50, 50);
-    //2-2.设置目标点
-    CGPathAddLineToPoint(path, NULL, 50, 200);
-    
-    CGPathAddLineToPoint(path, NULL, 200, 200);
+    CGContextSetRGBStrokeColor(context, 0, 1, 1, 1.0);//画笔线的颜色
+    CGContextSetLineWidth(context, 2.0);//线的宽度
+    CGContextAddArc(context, self.frame.size.width * 0.5 - 25, self.frame.size.height * 0.5 - 25, 50, 0, -self.progress, 1);
+    CGContextDrawPath(context, kCGPathStroke);
 
-    
-    CGPathAddLineToPoint(path, NULL, 200, 50);
-    
-    CGPathCloseSubpath(path);
-    
-    //3.将路径添加到上下文
-    CGContextAddPath(context, path);
-    
-    CGContextSetRGBStrokeColor(context, 1.0, 1.0, 0, 1.0);
-
-    //4.2 设置线条宽度
-    CGContextSetLineWidth(context, 3.0f);
-    
-    
-    //设置线条顶点样式
-    CGContextSetLineCap(context, kCGLineCapRound);
-    
-    //设置连接点的样式
-    CGContextSetLineJoin(context, kCGLineJoinRound);
-    
-    CGContextDrawPath(context, kCGPathFillStroke);
-    //6.释放路径
-    CGPathRelease(path);
 }
+
+
+
+- (void)setProgress:(CGFloat)progress
+{
+    _progress = progress;
+    [self setNeedsDisplay];
+}
+
 
 
 

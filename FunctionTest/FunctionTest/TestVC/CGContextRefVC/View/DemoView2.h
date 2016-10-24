@@ -10,4 +10,7 @@
 
 @interface DemoView2 : UIView
 
+
+@property (nonatomic, assign) CGFloat       progress;
+
 @end
