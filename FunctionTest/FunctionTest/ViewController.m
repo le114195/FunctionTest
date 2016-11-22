@@ -11,6 +11,7 @@
 #import "GestureVC.h"
 #import "AnimationVC.h"
 #import "ContextRefVC.h"
+#import "ImagePicker.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -20,6 +21,8 @@
 
 @property (nonatomic, strong) NSArray           *dataArray;
 
+
+@property (nonatomic, strong) ImagePicker       *imgPicker;
 
 @end
 
@@ -77,7 +80,14 @@
 
 #pragma mark - set/get
 
-
+- (ImagePicker *)imgPicker
+{
+    if (!_imgPicker) {
+        
+        _imgPicker = [[ImagePicker alloc] init];
+    }
+    return _imgPicker;
+}
 
 
 
@@ -131,8 +141,11 @@
             break;
         }
         case 2:{//画布
-            ContextRefVC *vc = [[ContextRefVC alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+            [self.imgPicker getOriginImage:self completion:^(id responseObject) {
+               
+                
+                
+            }];
             break;
         }
             
