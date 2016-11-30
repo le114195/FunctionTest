@@ -12,7 +12,8 @@
 #import "AnimationVC.h"
 #import "ContextRefVC.h"
 #import "ImagePicker.h"
-#import "MachineLearningVC.h"
+#import "SocketClientController.h"
+#import "SocketServerController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -32,7 +33,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.dataArray = @[@"gestureVC", @"动画效果", @"画布", @"机器学习"];
+    self.dataArray = @[@"gestureVC", @"动画效果", @"画布", @"Socket"];
     
     [self tableViewConfigure];
     
@@ -144,8 +145,10 @@
         }
             
         case 3:{
-            MachineLearningVC *machineVC = [[MachineLearningVC alloc] init];
-            [self.navigationController pushViewController:machineVC animated:YES];
+            SocketClientController *socketVC = [[SocketClientController alloc] init];
+            [self.navigationController pushViewController:socketVC animated:YES];
+            
+            break;
         };
             
         default:
