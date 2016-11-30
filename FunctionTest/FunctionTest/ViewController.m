@@ -12,10 +12,9 @@
 #import "AnimationVC.h"
 #import "ContextRefVC.h"
 #import "ImagePicker.h"
+#import "MachineLearningVC.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
-
-
 
 @property (nonatomic, weak) UITableView         *tableView;
 
@@ -33,7 +32,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.dataArray = @[@"gestureVC", @"动画效果", @"画布"];
+    self.dataArray = @[@"gestureVC", @"动画效果", @"画布", @"机器学习"];
     
     [self tableViewConfigure];
     
@@ -54,8 +53,6 @@
 
 
 #pragma mark - 子控件初始化
-
-
 - (void)tableViewConfigure
 {
     
@@ -88,8 +85,6 @@
     }
     return _imgPicker;
 }
-
-
 
 #pragma mark - 点击事件
 
@@ -144,12 +139,14 @@
             [self.imgPicker getOriginImage:self completion:^(id responseObject) {
                
                 
-                
             }];
             break;
         }
             
-            
+        case 3:{
+            MachineLearningVC *machineVC = [[MachineLearningVC alloc] init];
+            [self.navigationController pushViewController:machineVC animated:YES];
+        };
             
         default:
             break;

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		750B31441D7DB148000FB058 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750B31431D7DB148000FB058 /* CircleView.m */; };
 		750C1D901D9CC2CE000060F5 /* DemoView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 750C1D8F1D9CC2CE000060F5 /* DemoView2.m */; };
+		75124FA01DE4377D00BD55AA /* SVMAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75124F9E1DE4377D00BD55AA /* SVMAPI.cpp */; };
+		75124FA31DE437E200BD55AA /* svm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75124FA11DE437E200BD55AA /* svm.cpp */; };
+		75124FA61DE4394900BD55AA /* MachineLearningVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75124FA51DE4394900BD55AA /* MachineLearningVC.mm */; };
 		75417DA71D719DA400522F64 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75417DA61D719DA400522F64 /* AnimationVC.m */; };
 		7566D8C11D7EFE5E00279FFB /* PathFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7566D8C01D7EFE5E00279FFB /* PathFunc.m */; };
 		756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 756D69E91D75C40D00704334 /* MBProgressHUD.m */; };
@@ -42,6 +45,12 @@
 		750B31431D7DB148000FB058 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		750C1D8E1D9CC2CE000060F5 /* DemoView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView2.h; sourceTree = "<group>"; };
 		750C1D8F1D9CC2CE000060F5 /* DemoView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView2.m; sourceTree = "<group>"; };
+		75124F9E1DE4377D00BD55AA /* SVMAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVMAPI.cpp; sourceTree = "<group>"; };
+		75124F9F1DE4377D00BD55AA /* SVMAPI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SVMAPI.hpp; sourceTree = "<group>"; };
+		75124FA11DE437E200BD55AA /* svm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svm.cpp; sourceTree = "<group>"; };
+		75124FA21DE437E200BD55AA /* svm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = svm.hpp; sourceTree = "<group>"; };
+		75124FA41DE4394900BD55AA /* MachineLearningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineLearningVC.h; sourceTree = "<group>"; };
+		75124FA51DE4394900BD55AA /* MachineLearningVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MachineLearningVC.mm; sourceTree = "<group>"; };
 		75417DA51D719DA400522F64 /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
 		75417DA61D719DA400522F64 /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
 		7566D8BF1D7EFE5E00279FFB /* PathFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathFunc.h; sourceTree = "<group>"; };
@@ -110,6 +119,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75124F911DE436F800BD55AA /* MachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+				75124F921DE436F800BD55AA /* Controller */,
+				75124F931DE436F800BD55AA /* Model */,
+			);
+			path = MachineLearning;
+			sourceTree = "<group>";
+		};
+		75124F921DE436F800BD55AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75124FA41DE4394900BD55AA /* MachineLearningVC.h */,
+				75124FA51DE4394900BD55AA /* MachineLearningVC.mm */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75124F931DE436F800BD55AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75124F941DE4370B00BD55AA /* c_tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = c_tool;
+			sourceTree = "<group>";
+		};
+		75124F951DE4370B00BD55AA /* oc_tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = oc_tool;
+			sourceTree = "<group>";
+		};
+		75124F961DE4372900BD55AA /* MachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+				75124F9A1DE4376A00BD55AA /* SVM */,
+			);
+			path = MachineLearning;
+			sourceTree = "<group>";
+		};
+		75124F9A1DE4376A00BD55AA /* SVM */ = {
+			isa = PBXGroup;
+			children = (
+				75124F9E1DE4377D00BD55AA /* SVMAPI.cpp */,
+				75124F9F1DE4377D00BD55AA /* SVMAPI.hpp */,
+				75124FA11DE437E200BD55AA /* svm.cpp */,
+				75124FA21DE437E200BD55AA /* svm.hpp */,
+			);
+			path = SVM;
+			sourceTree = "<group>";
+		};
 		75417DA41D719D9400522F64 /* AnimationTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +253,7 @@
 		757301C71D5B4D9300253AC9 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
+				75124F911DE436F800BD55AA /* MachineLearning */,
 				75FE84C81D7A7E7300E45DBE /* CGContextRefVC */,
 				75417DA41D719D9400522F64 /* AnimationTest */,
 				757301C81D5B4DB300253AC9 /* GestureVC */,
@@ -205,6 +273,9 @@
 		75A43B7B1D75A6A1002DE0CF /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				75124F961DE4372900BD55AA /* MachineLearning */,
+				75124F941DE4370B00BD55AA /* c_tool */,
+				75124F951DE4370B00BD55AA /* oc_tool */,
 				75FE84D51D7A9CDF00E45DBE /* ImageSelect */,
 			);
 			path = Util;
@@ -377,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A43BA31D75A781002DE0CF /* NSArray+MASAdditions.m in Sources */,
+				75124FA61DE4394900BD55AA /* MachineLearningVC.mm in Sources */,
 				75FE84CE1D7A7EBE00E45DBE /* ContextRefVC.m in Sources */,
 				75A43BA21D75A781002DE0CF /* MASViewConstraint.m in Sources */,
 				757301B41D5B48FF00253AC9 /* ViewController.m in Sources */,
@@ -388,6 +460,7 @@
 				757301C51D5B49B600253AC9 /* TestCell.m in Sources */,
 				75A43B9E1D75A781002DE0CF /* MASConstraint.m in Sources */,
 				756D69EA1D75C40D00704334 /* MBProgressHUD.m in Sources */,
+				75124FA01DE4377D00BD55AA /* SVMAPI.cpp in Sources */,
 				75FE84D41D7A9BC900E45DBE /* ImgViewDraw.m in Sources */,
 				757301B11D5B48FF00253AC9 /* AppDelegate.m in Sources */,
 				75A43BA11D75A781002DE0CF /* MASViewAttribute.m in Sources */,
@@ -397,6 +470,7 @@
 				75A43BA01D75A781002DE0CF /* MASLayoutConstraint.m in Sources */,
 				757301AE1D5B48FF00253AC9 /* main.m in Sources */,
 				7566D8C11D7EFE5E00279FFB /* PathFunc.m in Sources */,
+				75124FA31DE437E200BD55AA /* svm.cpp in Sources */,
 				757301CB1D5B4DC500253AC9 /* GestureVC.m in Sources */,
 				75A43BA61D75A781002DE0CF /* ViewController+MASAdditions.m in Sources */,
 				75417DA71D719DA400522F64 /* AnimationVC.m in Sources */,
